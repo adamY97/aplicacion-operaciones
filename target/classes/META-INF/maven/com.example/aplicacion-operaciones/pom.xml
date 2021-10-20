@@ -14,9 +14,19 @@
 	<name>aplicacion-operaciones</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
 	<dependencies>
+	
+		<dependency>
+			<groupId>com.example.libreriaoperaciones</groupId>
+			<artifactId>libreria-operaciones</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -27,6 +37,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
