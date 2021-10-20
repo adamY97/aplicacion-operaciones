@@ -14,6 +14,7 @@ public class OperacionesController {
 
 	@GetMapping("/calculadora")
 	public String getResultado() {
+		//Realiza la operacion por defecto indicada en el application.properties
 		return operacion.operacionMatematica();
 	}
 }
